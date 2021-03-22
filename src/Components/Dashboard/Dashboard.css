@@ -1,0 +1,71 @@
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.globalBg{
+    background: #EEEEFF;
+}
+.topbarBtn{
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 17px;   
+ }
+ .topbarProfitBtn{
+     background: #34B53A;
+     border: 1px solid #34B53A;
+     border-radius: 17px;
+     color: #FFFFFF;
+ }
+ .topbarProfileBtn{
+     background: #007356;
+     color: #FFFFFF;
+     border: 1px solid #007356;
+     border-radius: 17px;
+ }
+ .topbarBtn:hover{
+     background: #007356;
+     color: #FFFFFF;
+     border: 1px solid #007356;
+ }
+ .show{
+     display: block;
+ }
+ .hidden{
+     display: none;
+ }
+ .sidebarToggle{
+     font-size: 35px;
+     color: #007356;
+     cursor: pointer; 
+ }
+ .searchField{
+    position: relative;
+    /* padding: 18p; */
+}
+ .searchIcon{
+    position: absolute;
+    top: 14px;
+    left: 26px;
+    z-index: 1;
+}
+.productBg{
+    background: #FFFFFF;
+    border-radius: 17px;
+}
+.quantity{
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px gray;
+    background: white;
+}
+.pdSizeStyle{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin: 7px;
+    font-size: 12px;
+    background: #EEEEFF;
+    /* box-shadow: 3px 3px 3px gray; */
+}
