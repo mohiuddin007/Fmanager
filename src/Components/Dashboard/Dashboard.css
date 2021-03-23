@@ -2,7 +2,7 @@
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
-.globalBg{
+.dashboardBg{
     background: #EEEEFF;
 }
 .topbarBtn{
@@ -40,7 +40,7 @@
  }
  .searchField{
     position: relative;
-    /* padding: 18p; */
+    padding-left: 30px;
 }
  .searchIcon{
     position: absolute;
@@ -51,11 +51,6 @@
 .productBg{
     background: #FFFFFF;
     border-radius: 17px;
-}
-.quantity{
-    border-radius: 50%;
-    box-shadow: 3px 3px 5px gray;
-    background: white;
 }
 .pdSizeStyle{
     padding-left: 5px;
@@ -68,4 +63,52 @@
     font-size: 12px;
     background: #EEEEFF;
     /* box-shadow: 3px 3px 3px gray; */
+}
+.lightText{
+    color: #B2B2BF;
+}
+.textClr{
+    color: #584FF3;
+    
+}
+.notificationTopIcon{
+    margin-right: 15px;
+    font-size: 20px;
+    color: #007356;
+}
+.productText{
+    font-size: 12px;
+}
+.productDropdown {
+    border-radius: 10px;
+    background: #EEEEEE;
+    width: 30px;
+    height: 18px;
+    font-size: 9px;
+    margin-left: 4px;
+    color: #E3106D;
+}
+.productFontWeight{
+    font-weight: 600;
+    font-size: 18px;
+}
+.productName{
+    font-size: 14px;
+}
+.plus {
+    height: 28px;
+}
+.quantity{
+    height: 30px;
+    width: 30px;
+
+}
+.updateBtn {
+    font-size: 12px;
+}
+.stockOutDropdown {
+    border-radius: 12px;
+    background: #EEEEFF;
+    height: 25px;
+    font-size: 14px;
 }

@@ -1,0 +1,24 @@
+.globalBg{
+    background: "#F3F3F3";
+}
+.bgCategory{
+    background: "#FFFFFF";
+    border: 1px solid #676767;
+    border-radius: 10px;
+}
+.subCategoryName{
+    background: "#FFFFFF";
+    box-shadow: 3px 3px 4px 4px #676767;
+    border-radius: 17px;
+}
+.commonBtn {
+    background: #007356;
+    border: 1px solid #007356;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 6px;
+    color: #FFFFFF;
+}
+.eyeIcon{
+    color: #007356;
+}
