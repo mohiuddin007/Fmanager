@@ -22,3 +22,21 @@
 .eyeIcon{
     color: #007356;
 }
+.chooseCategory {
+    border: 1px solid #676767;
+    height: 40px;
+    font-size: 14px;
+}
+.font-weight{
+    font-weight: 500;
+    font-size: 15px;
+}
+.inputFieldStyle{
+    border: 1px solid #676767;
+}
+.updateStockBtn{
+    font-size: 7px;
+}
+.lux{
+    height: 40px;
+}

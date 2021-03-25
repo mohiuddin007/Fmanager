@@ -1,4 +1,4 @@
-import {  faBriefcase, faChartBar, faClipboard, faDollarSign, faListAlt, faListUl, faPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {  faBriefcase, faChartBar, faClipboard, faDollarSign, faListAlt, faListUl, faPlus, faSortDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import './Sidebar.css';
@@ -22,12 +22,29 @@ const sidebarFun = () => {
              <button className="btn btn-light rounded-pill ml-2"><FontAwesomeIcon icon={faPlus}/> New Order</button>
              </div>
             
-             <Link to="/">
+             <Link to="/dashboard">
                  <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faChartBar} className="mr-3"/> Dashboard</h6>
              </Link>
-             <Link to="/product/addNewCategory">
-             <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faListUl} className="mr-3"/> Product</h6>
-             </Link>
+<div className="dropdownWrapper">
+   <h6 className="mt-5 sidebarBtn"><FontAwesomeIcon icon={faListUl} className="mr-3"/> Product <FontAwesomeIcon icon={faSortDown}/></h6>
+   
+   <div className="dropdownContent p-2">
+        <Link to="/product/addNewCategory">
+            <h6 className="mb-5 pt-2 sidebarBtn"> Add new category</h6>
+        </Link>
+        <Link to="/product/categoryAndSubCategory">
+            <h6 className="my-5 sidebarBtn"> Category and sub-category</h6>
+        </Link>
+        <Link to="/product/productEntry">
+            <h6 className="my-5 sidebarBtn"> Product entry</h6>
+        </Link>
+        <Link to="/product/productList">
+            <h6 className="mt-5 mb-2 sidebarBtn"> Product list</h6>
+        </Link>
+   </div>
+   </div>
+
+
              <Link to="/orders">
              <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faListAlt} className="mr-3"/> Orders</h6>
              </Link>

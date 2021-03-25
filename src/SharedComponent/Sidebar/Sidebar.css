@@ -7,7 +7,19 @@
 }
 .sidebarBtn{
     cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+    
 }
 .routerText{
     color: "#FFFFFF"
+}
+
+.dropdownContent{
+    display: none;
+    background: gray;
+    text-align: center;
+}
+.dropdownWrapper:hover .dropdownContent{
+    display: block;
 }

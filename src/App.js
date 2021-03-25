@@ -10,13 +10,14 @@ import {
 import AddNewCatagory from './Components/Product/AddNewCatagory';
 import CategoryAndSubCategory from './Components/Product/CategoryAndSubCategory';
 import ProductEntry from './Components/Product/ProductEntry';
+import ProductList from './Components/Product/ProductList';
 
 
 function App() {
   return (
     <Router >
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/dashboard">
            <Dashboard/>
         </Route>
         <Route path="/product/addNewCategory">
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/product/productEntry">
           <ProductEntry/>
+        </Route>
+        <Route path="/product/productList">
+          <ProductList/>
         </Route>
         <Route path="*">
           <NotFound/>
