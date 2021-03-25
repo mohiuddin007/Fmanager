@@ -122,7 +122,7 @@ const ProductList = () => {
                         <p >132</p>
                     </div>
                     <div className="col-1">
-                    <p className="text-info">
+                    <p className="text-warning">
                         12 <br/> <button className="btn btn-warning updateStockBtn">Update Stock</button>
                     </p>
                     </div>
@@ -157,7 +157,7 @@ const ProductList = () => {
                         <p className="mx-3">132</p>
                     </div>
                     <div className="col-1">
-                    <p className="text-info">
+                    <p className="text-success">
                         122 <br/> <button className="btn btn-success updateStockBtn">Update Stock</button>
                     </p>
                     </div>
