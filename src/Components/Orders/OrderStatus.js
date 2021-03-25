@@ -1,12 +1,20 @@
-import { faEye, faSearch, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import Sidebar from '../../SharedComponent/Sidebar/Sidebar';
 import Topbar from '../../SharedComponent/Topbar/Topbar';
-import lux from '../../Images/DashboardImg/Group 1112.png';
+import icon from '../../Images/orderImg/Icon.png';
+import icon2 from '../../Images/orderImg/Icon (5).png';
+import icon3 from '../../Images/orderImg/Icon (4).png';
+import icon4 from '../../Images/orderImg/Icon (3).png';
+import icon5 from '../../Images/orderImg/Icon (2).png';
+import icon6 from '../../Images/orderImg/Icon (1).png';
+import './Order.css';
 
-const ProductList = () => {
-    const topbarTitle = "Product List";
+
+
+const OrderStatus = () => {
+    const topbarTitle = "Orders & Order Status";
     const [sidebarVisibility, setSidebarVisibility] = useState(false);
 
     const sidebarShow = () => {
@@ -25,14 +33,17 @@ const ProductList = () => {
             <div className="col-10 pl-0 pl-md-5">
                 <Topbar topbarTitle={topbarTitle} />
 
-                <div className="row justify-content-between mt-5">
-                    <div className="col-6">
-                        <span className="eyeIcon">All</span>
-                        <span className="mx-3"> <input type="checkbox" /> Top selling</span>
-                        <span className="mx-3"> <input type="checkbox" /> High profit</span>
-                        <span className="mx-3"> <input type="checkbox" /> Low profit</span>
-                    </div>
-                    <div className="col-4 ml-auto">
+                <div class="row mt-5">
+                  <div class="col-9"> 
+                    <span class="mx-2 eyeIcon"> All</span>
+                    <span class="mx-2"><img src={icon} class="mr-1  orderIconImg" alt=""/>Total Order</span>
+                    <span class="mx-2"><img src={icon2} class="mr-1 orderIconImg" alt=""/>Order Placed</span>
+                    <span class="mx-2"><img src={icon3} class="mr-1 orderIconImg" alt=""/>Packaged </span>
+                    <span class="mx-2"><img src={icon4} class="mr-1 orderIconImg" alt=""/>In Shipping</span>
+                    <span class="mx-2"><img src={icon5} class="mr-1 orderIconImg" alt=""/>Delivered</span>
+                    <span class="mx-2"><img src={icon6} class="mr-1 orderIconImg" alt=""/>Canceled</span>
+                  </div>
+                  <div className="col-3 ml-auto">
                         <p className="text-right">
                             <FontAwesomeIcon icon={faEye} className="eyeIcon" /> Show
                             <select name="show" id="1">
@@ -42,60 +53,38 @@ const ProductList = () => {
                             entries
                         </p>
                     </div>
-                </div>
+              </div>
 
-                <div className="row justify-content-between mt-2">
-                    <div className="col-6">
-                        <span className="eyeIcon"> Category</span>
-                        <span className="mx-1">
-                            <select name="" id="">
-                                <option value="all">All</option>
-                            </select>
-                        </span>
-                        <span className="mx-1">
-                            <button className="commonBtn">New Category</button>
-                        </span>
-                        <span className="mx-1">
-                            <button className="commonBtn">New Product</button>
-                        </span>
-                    </div>
-                    <div className="col-3 text-right ml-auto">
-                        <FontAwesomeIcon icon={faSearch} className="searchIcon" />
-                        <input type="text" className="form-control rounded-pill searchField"
-                            placeholder="Type here for search" />
-                    </div>
-                </div>
-
-                {/* Product list design */}
-                <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
+              {/* order list */}
+              <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
                     <div className="col-1">
                         <p>Id</p>
                     </div>
                     <div className="col-1">
-                        <p>Photo</p>
+                        <p className="dateTime">Date & Time</p>
                     </div>
 
                     <div className="col-1">
                         <p>Name</p>
                     </div>
-                    <div className="col-1">
-                        <p>Type</p>
+                    <div className="col-2 text-center">
+                        <p>Email</p>
                     </div>
                     <div className="col-1">
-                        <p>Color</p>
-                    </div>
-                    <div className="col-1">
-                        <p>Sold</p>
+                        <p>Phone</p>
                     </div>
                     <div className="col-2">
-                    <p className="text-warning text-center">Remain</p>
+                        <p>Address</p>
+                    </div>
+                    <div className="col-1">
+                    <p>Product Qty</p>
                     </div>
                     
                     <div className="col-1">
                         <p>Price</p>
                     </div>
                     <div className="col-1">
-                        <p>profit</p>
+                        <p>Status</p>
                     </div>
                 </div>
 
@@ -105,32 +94,35 @@ const ProductList = () => {
                     </div>
                     <div className="col-1">
                         <p >
-                            <img src={lux} className="lux" alt=""/>
+                            12.01.20 <br/> 10.23pm
                         </p>
                     </div>
 
                     <div className="col-1">
-                        <p >Lux White</p>
-                    </div>
-                    <div className="col-1">
-                        <p >Saban</p>
-                    </div>
-                    <div className="col-1">
-                        <p >white</p>
-                    </div>
-                    <div className="col-1">
-                        <p >132</p>
+                        <p >Imran khan</p>
                     </div>
                     <div className="col-2">
-                    <p className="text-warning text-center">
-                        12 <br/> <button className="btn btn-warning updateStockBtn">Update Stock</button>
+                        <p >imran234@gmail.com</p>
+                    </div>
+                    <div className="col-1">
+                        <p >012546325</p>
+                    </div>
+                    <div className="col-2">
+                        <p >Dhaka Banhladesh 
+                          Mirpur 10. R23, D21</p>
+                    </div>
+                    <div className="col-1">
+                    <p >
+                        90pcs <br/>
+                        <button className="btn btn-dark orderStatusBtn">See all</button>
                     </p>
                     </div>
                     <div className="col-1">
                         <p >$124532</p>
+                        <p className="text-success text-center">Paid</p>
                     </div>
                     <div className="col-1">
-                        <p>$124</p>
+                       <button className="btn btn-warning orderStatusBtn">Order Placed</button>
                     </div>
                 </div>
 
@@ -140,32 +132,35 @@ const ProductList = () => {
                     </div>
                     <div className="col-1">
                         <p >
-                          <img src={lux} className="lux" alt=""/>
+                            12.01.20 <br/> 10.23pm
                         </p>
                     </div>
 
                     <div className="col-1">
-                        <p >Lux White</p>
-                    </div>
-                    <div className="col-1">
-                        <p >Saban</p>
-                    </div>
-                    <div className="col-1">
-                        <p >white</p>
-                    </div>
-                    <div className="col-1">
-                        <p >132</p>
+                        <p >Imran khan</p>
                     </div>
                     <div className="col-2">
-                    <p className="text-success text-center">
-                        122 <br/> <button className="btn btn-success updateStockBtn">Update Stock</button>
+                        <p >imran234@gmail.com</p>
+                    </div>
+                    <div className="col-1">
+                        <p >012546325</p>
+                    </div>
+                    <div className="col-2">
+                        <p >Dhaka Banhladesh 
+                          Mirpur 10. R23, D21</p>
+                    </div>
+                    <div className="col-1">
+                    <p >
+                        90pcs <br/>
+                        <button className="btn btn-dark orderStatusBtn">See all</button>
                     </p>
                     </div>
                     <div className="col-1">
                         <p >$124532</p>
+                        <p className="text-success text-center">Paid</p>
                     </div>
                     <div className="col-1">
-                        <p>$124</p>
+                       <button className="btn btn-warning orderStatusBtn">Order Placed</button>
                     </div>
                 </div>
 
@@ -175,39 +170,41 @@ const ProductList = () => {
                     </div>
                     <div className="col-1">
                         <p >
-                          <img src={lux} className="lux" alt=""/>
+                            12.01.20 <br/> 10.23pm
                         </p>
                     </div>
 
                     <div className="col-1">
-                        <p >Lux White</p>
-                    </div>
-                    <div className="col-1">
-                        <p >Saban</p>
-                    </div>
-                    <div className="col-1">
-                        <p >white</p>
-                    </div>
-                    <div className="col-1">
-                        <p >132</p>
+                        <p >Imran khan</p>
                     </div>
                     <div className="col-2">
-                    <p className="text-danger text-center">
-                        0 <br/> <button className="btn btn-danger updateStockBtn">Update Stock</button>
+                        <p >imran234@gmail.com</p>
+                    </div>
+                    <div className="col-1">
+                        <p >012546325</p>
+                    </div>
+                    <div className="col-2">
+                        <p >Dhaka Banhladesh 
+                          Mirpur 10. R23, D21</p>
+                    </div>
+                    <div className="col-1">
+                    <p >
+                        90pcs <br/>
+                        <button className="btn btn-dark orderStatusBtn">See all</button>
                     </p>
                     </div>
                     <div className="col-1">
                         <p >$124532</p>
+                        <p className="text-success text-center">Paid</p>
                     </div>
                     <div className="col-1">
-                        <p >$124</p>
+                       <button className="btn btn-warning orderStatusBtn">Order Placed</button>
                     </div>
                 </div>
-                {/* Product list design */}
-
-            </div>
+              {/* order list end */}
+            </div>    
         </div>
     );
 };
 
-export default ProductList;
+export default OrderStatus;

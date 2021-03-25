@@ -11,7 +11,9 @@ import AddNewCatagory from './Components/Product/AddNewCatagory';
 import CategoryAndSubCategory from './Components/Product/CategoryAndSubCategory';
 import ProductEntry from './Components/Product/ProductEntry';
 import ProductList from './Components/Product/ProductList';
-
+import AddExpense from './Components/Expenses/AddExpense';
+import ExpenseList from './Components/Expenses/ExpenseList';
+import OrderStatus from './Components/Orders/OrderStatus';
 
 function App() {
   return (
@@ -32,6 +34,16 @@ function App() {
         <Route path="/product/productList">
           <ProductList/>
         </Route>
+        <Route path="/orderStatus">
+           <OrderStatus/>
+        </Route>
+        <Route path="/expense/addExpense">
+           <AddExpense/>
+        </Route>
+        <Route path="/expense/expenseList">
+          <ExpenseList/>
+        </Route>
+
         <Route path="*">
           <NotFound/>
         </Route>

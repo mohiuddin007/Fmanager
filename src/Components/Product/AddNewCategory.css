@@ -1,8 +1,8 @@
 .globalBg{
-    background: "#F3F3F3";
+    background: #F3F3F3;
 }
 .bgCategory{
-    background: "#FFFFFF";
+    background: #FFFFFF;
     border: 1px solid #676767;
     border-radius: 10px;
 }
@@ -35,7 +35,7 @@
     border: 1px solid #676767;
 }
 .updateStockBtn{
-    font-size: 7px;
+    font-size: 11px;
 }
 .lux{
     height: 40px;
