@@ -22,7 +22,7 @@ const Sidebar = ({ setSidebarVisibility }) => {
                 <button className="btn btn-light rounded-pill ml-2"><FontAwesomeIcon icon={faPlus} /> New Order</button>
             </div>
 
-            <Link to="/dashboard">
+            <Link to="/">
                 <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faChartBar} className="mr-3" /> Dashboard</h6>
             </Link>
             {/* product dropdown start */}

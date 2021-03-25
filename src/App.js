@@ -19,7 +19,7 @@ function App() {
   return (
     <Router >
       <Switch>
-        <Route exact path="/dashboard">
+        <Route exact path="/">
            <Dashboard/>
         </Route>
         <Route path="/product/addNewCategory">
