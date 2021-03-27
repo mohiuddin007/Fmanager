@@ -14,6 +14,8 @@ import ProductList from './Components/Product/ProductList';
 import AddExpense from './Components/Expenses/AddExpense';
 import ExpenseList from './Components/Expenses/ExpenseList';
 import OrderStatus from './Components/Orders/OrderStatus';
+import Sale from './Components/Sale/Sale';
+import Companies from './Components/Companies/Companies';
 
 function App() {
   return (
@@ -34,6 +36,9 @@ function App() {
         <Route path="/product/productList">
           <ProductList/>
         </Route>
+        <Route path="/sale">
+          <Sale/>
+        </Route>
         <Route path="/orderStatus">
            <OrderStatus/>
         </Route>
@@ -43,7 +48,9 @@ function App() {
         <Route path="/expense/expenseList">
           <ExpenseList/>
         </Route>
-
+        <Route path="/companies">
+          <Companies/>
+        </Route>
         <Route path="*">
           <NotFound/>
         </Route>

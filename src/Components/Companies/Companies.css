@@ -1,0 +1,12 @@
+.company_logo{
+    height: 20px;
+    background: #181818;
+    border-radius: 50%;
+}
+.companiesBtn{
+    border: 1px solid #007356;
+    background: #007356;
+    color: #FFFFFF;
+    padding: 6px;
+    border-radius: 10px;
+}

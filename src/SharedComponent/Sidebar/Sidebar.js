@@ -1,4 +1,4 @@
-import { faBriefcase, faChartBar, faClipboard, faDollarSign, faListAlt, faListUl, faPlus, faSortDown, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faChartBar, faClipboard, faDollarSign, faListAlt, faListUl, faPlus, faShoppingBasket, faSortDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import './Sidebar.css';
@@ -46,7 +46,9 @@ const Sidebar = ({ setSidebarVisibility }) => {
             </div>
             {/* product dropdown end */}
 
-
+            <Link to="/sale">
+                <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faShoppingBasket} className="mr-3" /> Sale</h6>
+            </Link>
             <Link to="/orderStatus">
                 <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faListAlt} className="mr-3" /> Orders</h6>
             </Link>
@@ -69,14 +71,27 @@ const Sidebar = ({ setSidebarVisibility }) => {
                 <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faBriefcase} className="mr-3" /> Companies</h6>
             </Link>
             <Link to="/report">
-                <h6 className="my-5 sidebarBtn"><FontAwesomeIcon icon={faClipboard} className="mr-3" /> Report</h6>
+                
             </Link>
-
-
-
-
-
-
+            {/* report dropdown start */}
+            <div className="dropdownWrapper">
+            <h6 className="mt-5 sidebarBtn"><FontAwesomeIcon icon={faClipboard} className="mr-3" /> Report</h6>
+                <div className="dropdownContent p-2">
+                    <Link to="/report/salesReport">
+                        <h6 className=" pt-2 sidebarBtn"> Sales Report</h6>
+                    </Link>
+                    <Link to="/report/expenseReport">
+                        <h6 className="mt-5 sidebarBtn"> Expense Report</h6>
+                    </Link>
+                    <Link to="/report/deliveryReport">
+                        <h6 className="mt-5 sidebarBtn"> Delivery Report</h6>
+                    </Link>
+                    <Link to="/report/stockReport">
+                        <h6 className="mt-5 mb-2 sidebarBtn"> Stock Report</h6>
+                    </Link>
+                </div>
+            </div>
+            {/* report dropdown end */}
         </div>
     );
 };

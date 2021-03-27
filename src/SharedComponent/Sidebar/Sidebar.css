@@ -19,6 +19,7 @@
     display: none;
     background: gray;
     text-align: center;
+    border-radius: 5px;
 }
 .dropdownWrapper:hover .dropdownContent{
     display: block;
