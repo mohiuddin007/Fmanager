@@ -16,6 +16,10 @@ import ExpenseList from './Components/Expenses/ExpenseList';
 import OrderStatus from './Components/Orders/OrderStatus';
 import Sale from './Components/Sale/Sale';
 import Companies from './Components/Companies/Companies';
+import SalesReport from './Components/Report/SalesReport';
+import ExpenseReport from './Components/Report/ExpenseReport';
+import DeliveryReport from './Components/Report/DeliveryReport';
+import StockReport from './Components/Report/StockReport';
 
 function App() {
   return (
@@ -50,6 +54,18 @@ function App() {
         </Route>
         <Route path="/companies">
           <Companies/>
+        </Route>
+        <Route path="/report/salesReport">
+          <SalesReport/>
+        </Route>
+        <Route path="/report/expenseReport">
+          <ExpenseReport/>
+        </Route>
+        <Route path="/report/deliveryReport">
+          <DeliveryReport/>
+        </Route>
+        <Route path="/report/stockReport">
+          <StockReport/>
         </Route>
         <Route path="*">
           <NotFound/>

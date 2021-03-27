@@ -75,7 +75,7 @@ const Sidebar = ({ setSidebarVisibility }) => {
             </Link>
             {/* report dropdown start */}
             <div className="dropdownWrapper">
-            <h6 className="mt-5 sidebarBtn"><FontAwesomeIcon icon={faClipboard} className="mr-3" /> Report</h6>
+            <h6 className="mt-5 sidebarBtn"><FontAwesomeIcon icon={faClipboard} className="mr-3" /> Report <FontAwesomeIcon icon={faSortDown} /></h6>
                 <div className="dropdownContent p-2">
                     <Link to="/report/salesReport">
                         <h6 className=" pt-2 sidebarBtn"> Sales Report</h6>

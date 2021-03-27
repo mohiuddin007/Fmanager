@@ -1,0 +1,31 @@
+.deliveryReportSeeAllBtn{
+    background: #181818;
+    border: 1px solid #181818;
+    color: #FFFFFF;
+    font-size: 12px;
+    border-radius: 4px;
+    /* padding: 3px; */
+}
+.deliveryReportOrderStatusBtn{
+    background: #F81E1E;
+    border: 1px solid #F81E1E;
+    color: #FFFFFF;
+    font-size: 10px;
+    border-radius: 4px;
+}
+.deliveryReportDropdown{
+    background: #007356;
+    border: 1px solid #007356;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding: 6px;
+    margin-right: 10px;
+}
+.stockReportDropdown{
+    background: #007356;
+    border: 1px solid #007356;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #FFFFFF;
+    /* padding: 6px; */
+}
