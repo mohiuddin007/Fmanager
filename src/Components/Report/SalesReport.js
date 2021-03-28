@@ -123,6 +123,38 @@ const SalesReport = () => {
                         <p >Softify Digital</p>
                     </div>
                 </div>
+
+                <div className="row justify-content-between p-2 mt-2 bgCategory">
+                    <div className="col-1">
+                        <p>12</p>
+                    </div>
+                    <div className="col-1">
+                        <p >
+                            12.01.20 <br /> 10.23pm
+                        </p>
+                    </div>
+
+                    <div className="col-1">
+                        <p >Imran khan</p>
+                    </div>
+                    <div className="col-1">
+                        <p >50pcs</p>
+                        <button className="deliveryReportSeeAllBtn">See all</button>
+                    </div>
+                    <div className="col-1">
+                        <p >$125325</p>
+                        <button className="salesReportPriceBtn">Paid</button>
+                    </div>
+                    <div className="col-1">
+                        <p >$12</p>
+                    </div>
+                    <div className="col-1">
+                        <p >$3212 </p>
+                    </div>
+                    <div className="col-1">
+                        <p >Softify Digital</p>
+                    </div>
+                </div>
                 {/* sales Report list  */}
 
             </div>
