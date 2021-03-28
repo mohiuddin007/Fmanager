@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import Sidebar from '../../SharedComponent/Sidebar/Sidebar';
 import Topbar from '../../SharedComponent/Topbar/Topbar';
+import { Bar } from 'react-chartjs-2';
 
 const ExpenseReport = () => {
     const topbarTitle = "Expense Report";
@@ -32,10 +33,10 @@ const ExpenseReport = () => {
                         </select>
                     </span>
                     <span className="mr-auto" >
-                         <select name="" id="" className="deliveryReportDropdown">
-                             <option value="Expense type">Expense Type</option>
-                         </select>
-                     </span>
+                        <select name="" id="" className="deliveryReportDropdown">
+                            <option value="Expense type">Expense Type</option>
+                        </select>
+                    </span>
 
                     <span className="mx-1  mx-md-3"><button className="topbarBtn px-3">This week</button></span>
                     <span className="mx-1 mx-md-3"><button className="topbarBtn px-3">This month</button></span>
@@ -45,6 +46,63 @@ const ExpenseReport = () => {
                     </span>
                 </div>
                 {/* topbar end */}
+                
+                <div>
+                <Bar
+                    data={{
+                        labels: ['16/3', '17/3', '18/3', '19/3', '20/3', '21/3', 
+                        '22/3', '23/3', '24/3', '25/3', '26/3', '27/3'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [500, 600, 100, 750, 800, 650, 580, 690, 860, 700, 900, 580],
+                            backgroundColor: [
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#007356',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE'
+                            ],
+                            borderColor: [
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#007356',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE',
+                                '#DAD7FE'
+                            ],
+                            borderWidth: 1
+                        }]
+                    }}
+                    width={400}
+                    height={300}
+                    options={{ 
+                        maintainAspectRatio: false,
+                        scales: {
+                            yAxes: [
+                                {
+                                ticks: {
+                                    beginAtZero: true, 
+                                },
+                            }
+                            ]
+                        }
+                    }}
+                />
+                </div>
+                
 
                 <div className="row mt-5">
 
@@ -91,12 +149,12 @@ const ExpenseReport = () => {
                     </div>
                 </div>
 
-                <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
+                <div className="row justify-content-between p-2 mt-2 bgCategory">
                     <div className="col-1">
                         <p>12</p>
                     </div>
                     <div className="col-2">
-                    <p >
+                        <p >
                             12.01.20 <br /> 10.23pm
                         </p>
                     </div>
@@ -126,12 +184,12 @@ const ExpenseReport = () => {
                     </div>
                 </div>
 
-                <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
+                <div className="row justify-content-between p-2 mt-2 bgCategory">
                     <div className="col-1">
                         <p>12</p>
                     </div>
                     <div className="col-2">
-                    <p >
+                        <p >
                             12.01.20 <br /> 10.23pm
                         </p>
                     </div>
@@ -161,12 +219,12 @@ const ExpenseReport = () => {
                     </div>
                 </div>
 
-                <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
+                <div className="row justify-content-between p-2 mt-2 bgCategory">
                     <div className="col-1">
                         <p>12</p>
                     </div>
                     <div className="col-2">
-                    <p >
+                        <p >
                             12.01.20 <br /> 10.23pm
                         </p>
                     </div>
