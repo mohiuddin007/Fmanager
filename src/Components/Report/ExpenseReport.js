@@ -125,6 +125,76 @@ const ExpenseReport = () => {
 
                     </div>
                 </div>
+
+                <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
+                    <div className="col-1">
+                        <p>12</p>
+                    </div>
+                    <div className="col-2">
+                    <p >
+                            12.01.20 <br /> 10.23pm
+                        </p>
+                    </div>
+
+                    <div className="col-2">
+                        <p>Labour</p>
+                    </div>
+                    <div className="col-1 ">
+                        <p>$400</p>
+                    </div>
+                    <div className="col-2 text-center">
+                        <p>Cash</p>
+                    </div>
+                    <div className="col-2">
+                        <p>skjdfskdjf ksdfjjhf dfjd</p>
+                    </div>
+                    <div className="col-2">
+                        <div className="row justify-content-between text-center">
+                            <div className="col-6">
+                                <span><FontAwesomeIcon icon={faEdit} className="eyeIcon" /> <br /> Edit</span>
+                            </div>
+                            <div className="col-6">
+                                <span ><FontAwesomeIcon icon={faTrash} className="text-danger" />  Delete</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="row justify-content-between p-2 mt-2 font-weight-bold bgCategory">
+                    <div className="col-1">
+                        <p>12</p>
+                    </div>
+                    <div className="col-2">
+                    <p >
+                            12.01.20 <br /> 10.23pm
+                        </p>
+                    </div>
+
+                    <div className="col-2">
+                        <p>Labour</p>
+                    </div>
+                    <div className="col-1 ">
+                        <p>$400</p>
+                    </div>
+                    <div className="col-2 text-center">
+                        <p>Cash</p>
+                    </div>
+                    <div className="col-2">
+                        <p>skjdfskdjf ksdfjjhf dfjd</p>
+                    </div>
+                    <div className="col-2">
+                        <div className="row justify-content-between text-center">
+                            <div className="col-6">
+                                <span><FontAwesomeIcon icon={faEdit} className="eyeIcon" /> <br /> Edit</span>
+                            </div>
+                            <div className="col-6">
+                                <span ><FontAwesomeIcon icon={faTrash} className="text-danger" />  Delete</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 {/* Expense report list */}
             </div>
         </div>
