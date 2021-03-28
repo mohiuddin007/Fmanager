@@ -29,3 +29,10 @@
     color: #FFFFFF;
     /* padding: 6px; */
 }
+.salesReportPriceBtn{
+    background: #0D8213;
+    border: 1px solid #0D8213;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 4px;
+}
